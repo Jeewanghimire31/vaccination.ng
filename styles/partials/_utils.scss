@@ -16,7 +16,7 @@
   line-height: normal;
 }
 
-.btn_primary {
+.btn_secondary {
   display: inline-flex;
   padding: 1.25rem 1.625rem;
   align-items: flex-start;
@@ -30,6 +30,61 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none;
-  outline: none;
+}
+
+.btn_outline {
+  display: inline-flex;
+  padding: 1.25rem 1.5625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 1.25rem;
+  border: 2px solid #17c2ec;
+  background: rgba(196, 196, 196, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btn_primary {
+  display: inline-flex;
+  padding: 1.25rem 1.5625rem;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border-radius: 1.25rem;
+  background: #17c2ec;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .btn_secondary {
+    font-size: 1.25rem;
+  }
+  .btn_outline {
+    font-size: 1.25rem;
+  }
+  .btn_primary {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .btn_secondary {
+    font-size: 0.875rem;
+  }
+  .btn_outline {
+    font-size: 0.875rem;
+  }
+  .btn_primary {
+    font-size: 0.875rem;
+  }
 }

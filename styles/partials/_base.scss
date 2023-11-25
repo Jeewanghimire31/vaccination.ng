@@ -4,7 +4,20 @@ body {
   background-size: cover;
 }
 
+main {
+  width: 100vw;
+}
 .container {
   max-width: 81.25rem;
   margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 41.74rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 19.0575rem;
+  }
 }
