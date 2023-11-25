@@ -1,0 +1,251 @@
+.landing_section {
+  display: flex;
+  align-items: start;
+  padding-block: 8rem;
+
+  .info {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+
+      .title_1 {
+        color: #17c2ec;
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .title_2 {
+        h2 {
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 3rem;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+
+        h4 {
+          color: #17c2ec;
+          font-family: Montserrat;
+          font-size: 3rem;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+        }
+      }
+    }
+
+    .summary {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .banner_actions {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  .banner {
+    width: 50%;
+    height: fit-content;
+    .banner_cover {
+      position: relative;
+      margin: auto;
+      height: 35.6875rem;
+      width: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2.6995rem;
+        object-fit: cover;
+        overflow: hidden;
+      }
+
+      .illustration_cover {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 6.25rem;
+        height: 6.25rem;
+        flex-shrink: 0;
+        border-radius: 1.25rem;
+        background: #fff;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+
+        img {
+          width: 5rem;
+          //   height: 4.08681rem;
+        }
+      }
+
+      .cover_one {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .cover_two {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      .specialists {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-10%, 50%);
+        width: 23.375rem;
+        // height: 6.25rem;
+        border-radius: 1.25rem;
+        background: rgba(196, 196, 196, 0.2);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1),
+          0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        gap: 1.25rem;
+        align-items: center;
+        padding: 1.25rem;
+
+        .specialist_container {
+          width: 50%;
+          height: 3.75rem;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: -10px;
+
+          img {
+            width: 3.75rem;
+            height: 3.75rem;
+          }
+        }
+        .specialist_number {
+          display: flex;
+          flex-direction: column;
+          .count {
+            color: #fff;
+            font-family: Montserrat;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .count_name {
+            color: #17c2ec;
+            font-family: Montserrat;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing_section {
+    flex-direction: column;
+    // background-color: #17c2ec;
+    // width: 100%;
+    align-items: center;
+    gap: 3.44rem;
+
+    .info {
+      width: 100%;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .title_1 {
+          font-size: 1.125rem;
+        }
+
+        .title_2 {
+          h2 {
+            font-size: 2.25rem;
+          }
+
+          h4 {
+            font-size: 2.25rem;
+          }
+        }
+      }
+
+      .summary {
+        font-size: 1.25rem;
+      }
+    }
+    .banner {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .landing_section {
+    align-items: center;
+    gap: 3.44rem;
+
+    .info {
+      width: 100%;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .title_1 {
+          font-size: 0.75rem;
+        }
+
+        .title_2 {
+          h2 {
+            font-size: 1.5rem;
+          }
+
+          h4 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+      .summary {
+        font-size: 0.875rem;
+      }
+    }
+    .banner {
+      width: 100%;
+
+      .banner_cover {
+        width: 100%;
+        img {
+        }
+      }
+      //   display: none;
+    }
+  }
+}

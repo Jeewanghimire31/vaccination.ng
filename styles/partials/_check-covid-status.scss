@@ -1,0 +1,186 @@
+.check_covid_status {
+  margin-top: 3.87rem;
+  border-radius: 1.25rem;
+  background: rgba(196, 196, 196, 0.1);
+  min-height: 21.25rem;
+
+  .title {
+    width: 100%;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    background: rgba(196, 196, 196, 0.05);
+    height: 6.3rem;
+    display: flex;
+    align-items: center;
+    padding-inline: 5.81rem;
+
+    p {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+  .covid_status_body {
+    // height: 100%;
+    min-height: 21.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.19rem;
+    padding-inline: 5.81rem;
+    padding-block: 1.94rem;
+
+    .check_status_form {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+
+      .form_controls {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+        flex-wrap: wrap;
+
+        input {
+          flex: 1;
+          height: 4.3125rem;
+          padding-inline: 1.6rem;
+          padding-block: 1.25rem;
+
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-radius: 1.25rem;
+          outline: none;
+          border: 3px solid rgba(196, 196, 196, 0.15);
+          background: transparent;
+
+          &:focus {
+            border: 3px solid #17c2ec;
+          }
+        }
+      }
+      .form_actions {
+        button {
+          color: #17c2ec;
+        }
+      }
+    }
+    .certificate_info {
+      border-radius: 1.25rem;
+      background: rgba(196, 196, 196, 0.05);
+      min-height: 4.375rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        color: #17c2ec;
+        font-family: Montserrat;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 1rem;
+
+        a {
+          color: #17c2ec;
+          font-family: Montserrat;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .check_covid_status {
+    .title {
+      padding-inline: 4rem;
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+    .covid_status_body {
+      padding-inline: 4rem;
+
+      .check_status_form {
+        flex-direction: column;
+        width: 100%;
+
+        .form_controls {
+          flex-direction: column;
+          width: 100%;
+
+          input {
+            font-size: 1.25rem;
+            font-weight: 500;
+            width: 100%;
+          }
+        }
+      }
+      .certificate_info {
+        p {
+          font-size: 0.875rem;
+          a {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .check_covid_status {
+    .title {
+      width: 100%;
+      padding-inline: 2rem;
+
+      p {
+        font-size: 0.625rem;
+      }
+    }
+    .covid_status_body {
+      padding-inline: 1rem;
+
+      .check_status_form {
+        flex-direction: column;
+        width: 100%;
+
+        .form_controls {
+          flex-direction: column;
+          width: 100%;
+
+          input {
+            font-size: 0.75rem;
+            font-weight: 500;
+            width: 100%;
+          }
+        }
+      }
+      .certificate_info {
+        p {
+          font-size: 0.625rem;
+
+          a {
+            font-size: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.companies {
+  width: 100%;
+  min-height: 9.375rem;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1rem;
+
+  .companies_logo_container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    img {
+      // height: auto;
+      // max-width: 1÷00%;
+      max-width: 18.04169rem;
+      opacity: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .companies {
+    height: 5rem;
+    .companies_logo_container {
+      img {
+        max-width: 9.27rem;
+        opacity: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .companies {
+    height: 2.4rem;
+    .companies_logo_container {
+      img {
+        max-width: 4.53rem;
+        opacity: 100%;
+      }
+    }
+  }
+}
