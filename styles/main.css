@@ -1,12 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: url("../../assets//img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Montserrat;
 }
 
 main {
   width: 100vw;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .container {
@@ -16,7 +32,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .container {
-    max-width: 41.74rem;
+    max-width: 41.75rem;
   }
 }
 @media screen and (max-width: 425px) {
@@ -24,53 +40,13 @@ main {
     max-width: 19.0575rem;
   }
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding-block: 2rem;
-}
-header nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.56rem;
-}
-header nav ul li a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-footer nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1.56rem;
-}
-footer nav ul li a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-}
-footer .footer-social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.63rem;
-}
-
 .active_link {
   color: #fff;
   font-family: Montserrat;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.813rem;
 }
 
 .inactive_link {
@@ -79,9 +55,29 @@ footer .footer-social-links {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.813rem;
 }
 
+@media screen and (max-width: 768px) {
+  .active_link {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .inactive_link {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .active_link {
+    line-height: 1.063rem;
+    font-size: 0.875rem;
+  }
+  .inactive_link {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+}
 .btn_secondary {
   display: inline-flex;
   padding: 1.25rem 1.625rem;
@@ -151,6 +147,205 @@ footer .footer-social-links {
   }
   .btn_primary {
     font-size: 0.875rem;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 2rem;
+}
+header .main_nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.56rem;
+}
+header .main_nav ul li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+header .ham_burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .main_nav {
+    display: none;
+  }
+  header .header-actions {
+    display: none;
+  }
+  header .ham_burger {
+    cursor: pointer;
+    display: block;
+  }
+  header .ham_burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10rem;
+  padding-block: 3rem;
+}
+footer nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.56rem;
+}
+footer nav ul li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+footer .footer-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.63rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  footer nav ul {
+    gap: 1.56rem;
+  }
+  footer .footer-social-links {
+    gap: 0.39rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: start;
+    padding-bottom: 1.88rem;
+  }
+  footer nav ul {
+    flex-direction: column;
+    gap: 0.62rem;
+  }
+  footer .footer-social-links {
+    gap: 0.22rem;
+  }
+}
+.information_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+.information_section .info_icon {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.information_section .info_icon img {
+  padding: 0.63rem 0.62rem;
+  border-radius: 0.625rem;
+  background: rgba(196, 196, 196, 0.1);
+}
+.information_section .info_icon p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.813rem;
+}
+.information_section .info_icon .info_desc p:first-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.813rem;
+}
+.information_section .information_section_content_second {
+  display: flex;
+  align-items: center;
+  gap: 3.12rem;
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+  background: rgba(196, 196, 196, 0.05);
+  padding: 3.19rem 2rem 2.56rem;
+}
+.information_section button {
+  margin-left: 5.44rem;
+}
+
+@media screen and (max-width: 768px) {
+  .information_section {
+    gap: 2.81rem;
+  }
+  .information_section .information_section_content_second {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3.12rem;
+    padding: 2.31rem 0.09rem 2.81rem 0.75rem;
+  }
+  .information_section .information_section_content_second .info_icon p {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .information_section .information_section_content_second .info_icon .info_desc p:first-child {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .information_section button {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4.27rem;
+    margin-right: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .information_section {
+    gap: 1.56rem;
+  }
+  .information_section .info_icon img {
+    padding: 0.31rem;
+    border-radius: 0.625rem;
+    background: rgba(196, 196, 196, 0.1);
+  }
+  .information_section .info_icon p {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .information_section .information_section_content_first {
+    padding-left: 0.63rem;
+  }
+  .information_section .information_section_content_second {
+    padding: 1.25rem 4.73rem 0.63rem 0.63rem;
+    gap: 1.5rem;
+  }
+  .information_section .information_section_content_second .info_icon {
+    gap: 0.87rem;
+  }
+  .information_section .information_section_content_second .info_icon p {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .information_section .information_section_content_second .info_icon .info_desc p:first-child {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .information_section button {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
   }
 }
 .companies {
@@ -402,18 +597,6 @@ footer .footer-social-links {
     width: 100%;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-button {
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
 .check_covid_status {
   margin-top: 3.87rem;
   border-radius: 1.25rem;
@@ -568,5 +751,262 @@ button {
   }
   .check_covid_status .covid_status_body .certificate_info p a {
     font-size: 0.625rem;
+  }
+}
+.registration_section {
+  min-height: 46.875rem;
+  display: flex;
+  background-color: lightgray;
+  padding: 4.37rem;
+  margin-top: 3.5rem;
+}
+.registration_section .registration_form_title_small_screen {
+  display: none;
+}
+.registration_section .registration_form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.5rem;
+}
+.registration_section .registration_form .registration_form_title {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-right: 12.5rem;
+}
+.registration_section .registration_form .form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.registration_section .registration_form .form .form_controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.registration_section .registration_form .form .form_controls .form_control {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.registration_section .registration_form .form .form_controls .form_control label {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.813rem;
+}
+.registration_section .registration_form .form .form_controls .form_control input {
+  width: 100%;
+  height: 4.375rem;
+  border-radius: 1.25rem;
+  background: rgba(11, 21, 60, 0.15);
+  outline: none;
+  color: rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.813rem;
+  padding-inline: 1.88rem;
+  border: none;
+}
+.registration_section .registration_form .form .form_controls .form_control p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.registration_section .registration_form .form .form_controls .form_control .row {
+  display: flex;
+  gap: 2.25rem;
+}
+.registration_section .registration_form .form .form_controls .form_control .row .input {
+  display: flex;
+  border-radius: 1.25rem;
+  background: rgba(11, 21, 60, 0.15);
+  padding: 0.62rem;
+  width: 70%;
+}
+.registration_section .registration_form .form .form_controls .form_control .row .input .flag {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.62rem;
+  padding: 0.62rem;
+  border-right: 4px solid rgba(0, 0, 0, 0.1);
+}
+.registration_section .registration_form .form .form_controls .form_control .row .input input {
+  background: transparent;
+}
+.registration_section .registration_form .form .form_controls .form_control .row button {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+}
+.registration_section .registration_form .form .form_actions button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registration_section .registration_form .form .already_registered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.88rem;
+}
+.registration_section .registration_form .form .already_registered .question {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.registration_section .registration_form .form .already_registered .check_stat {
+  color: #17c2ec;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.registration_section .status_banner {
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+.registration_section .status_banner img {
+  height: 100%;
+  max-width: 100%;
+}
+.registration_section .status_banner button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 30;
+  transform: translateX(-50%);
+  font-size: 1.25rem;
+  border: none;
+  padding: 0.81rem 2.06rem;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .registration_section {
+    flex-direction: column;
+  }
+  .registration_section .registration_form_title_small_screen {
+    display: flex;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.75rem;
+    margin-bottom: 2.5rem;
+  }
+  .registration_section .registration_form {
+    order: 2;
+  }
+  .registration_section .registration_form .registration_form_title {
+    display: none;
+  }
+  .registration_section .registration_form .form {
+    width: 100%;
+  }
+  .registration_section .registration_form .form .form_controls .form_control label {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .registration_section .registration_form .form .form_controls .form_control input {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .registration_section .status_banner {
+    order: 1;
+    margin-bottom: 4.37rem;
+  }
+  .registration_section .status_banner button {
+    bottom: 4.04rem;
+    left: 13rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .registration_section {
+    padding: 2.5rem;
+  }
+  .registration_section .registration_form_title_small_screen {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+  .registration_section .registration_form .form {
+    gap: 0;
+  }
+  .registration_section .registration_form .form .form_controls .form_control label {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .registration_section .registration_form .form .form_controls .form_control input {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .registration_section .registration_form .form .form_controls .form_control p {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .registration_section .registration_form .form .form_controls .form_control .row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .registration_section .registration_form .form .form_controls .form_control .row .input {
+    width: 100%;
+    padding: 0.31rem;
+    align-items: center;
+  }
+  .registration_section .registration_form .form .form_controls .form_control .row .flag {
+    gap: 0.31rem !important;
+    padding: 0.31rem !important;
+  }
+  .registration_section .registration_form .form .form_controls .form_control .row button {
+    width: 50%;
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .registration_section .registration_form .form .form_actions button {
+    margin: 3.75rem 0 1.5rem;
+  }
+  .registration_section .registration_form .form .already_registered {
+    gap: 1.25rem;
+  }
+  .registration_section .registration_form .form .already_registered .question {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .registration_section .registration_form .form .already_registered .check_stat {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .registration_section .status_banner {
+    order: 1;
+    margin-bottom: 4.37rem;
+  }
+  .registration_section .status_banner button {
+    bottom: 4.04rem;
+    left: 13rem;
   }
 }/*# sourceMappingURL=main.css.map */

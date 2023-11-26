@@ -1,9 +1,16 @@
+// google fonts
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+// reset
+@import "./partials/reset";
+
 @import "./partials/base";
+@import "./partials/utils";
+@import "./partials/button";
 @import "./partials/header";
 @import "./partials/footer";
-@import "./partials/utils";
+@import "./partials/information";
 @import "./partials/companies";
 @import "./partials/landing-section";
-@import "./partials/reset";
 @import "./partials/check-covid-status";
+@import "./partials/register";
