@@ -1,0 +1,303 @@
+.registration_section {
+  min-height: 46.875rem;
+  display: flex;
+  background-color: lightgray;
+  padding: 4.37rem;
+  margin-top: 3.5rem;
+
+  .registration_form_title_small_screen {
+    display: none;
+  }
+
+  .registration_form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.5rem;
+
+    .registration_form_title {
+      color: #000;
+      font-family: Montserrat;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-right: 12.5rem;
+    }
+    .form {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+
+      .form_controls {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .form_control {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+
+          label {
+            color: #000;
+            font-family: Montserrat;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.813rem;
+          }
+
+          input {
+            width: 100%;
+            height: 4.375rem;
+            border-radius: 1.25rem;
+            background: rgba(11, 21, 60, 0.15);
+            outline: none;
+            color: rgba(0, 0, 0, 0.25);
+            font-family: Montserrat;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.813rem;
+            padding-inline: 1.88rem;
+            border: none;
+          }
+
+          p {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Montserrat;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5rem;
+          }
+
+          .row {
+            display: flex;
+            gap: 2.25rem;
+
+            .input {
+              display: flex;
+              border-radius: 1.25rem;
+              background: rgba(11, 21, 60, 0.15);
+              padding: 0.62rem;
+              width: 70%;
+
+              .flag {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                gap: 0.62rem;
+                padding: 0.62rem;
+                border-right: 4px solid rgba(0, 0, 0, 0.1);
+              }
+              input {
+                background: transparent;
+              }
+            }
+            button {
+              display: flex;
+              width: 25%;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+      .form_actions {
+        button {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .already_registered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.88rem;
+
+        .question {
+          color: rgba(0, 0, 0, 0.5);
+          font-family: Montserrat;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .check_stat {
+          color: #17c2ec;
+          font-family: Montserrat;
+          font-size: 1.25rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .status_banner {
+    flex: 1;
+    position: relative;
+    width: 100%;
+
+    img {
+      height: 100%;
+      // object-fit: fill;
+      max-width: 100%;
+    }
+
+    button {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      z-index: 30;
+      transform: translateX(-50%);
+      // text-align: center;
+      font-size: 1.25rem;
+      border: none;
+      padding: 0.81rem 2.06rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registration_section {
+    flex-direction: column;
+
+    .registration_form_title_small_screen {
+      display: flex;
+      color: #000;
+      font-family: Montserrat;
+      font-size: 2.25rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 2.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .registration_form {
+      order: 2;
+
+      .registration_form_title {
+        display: none;
+      }
+
+      .form {
+        width: 100%;
+
+        .form_controls {
+          .form_control {
+            label {
+              font-size: 1.25rem;
+              line-height: 1.5rem;
+            }
+
+            input {
+              font-size: 1.25rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .status_banner {
+      order: 1;
+      margin-bottom: 4.37rem;
+
+      button {
+        bottom: 4.04rem;
+        left: 13rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .registration_section {
+    padding: 2.5rem;
+    .registration_form_title_small_screen {
+      font-size: 1.5rem;
+      line-height: 1.813rem;
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .registration_form {
+      .form {
+        gap: 0;
+        .form_controls {
+          .form_control {
+            label {
+              font-size: 0.875rem;
+              line-height: 1.063rem;
+            }
+
+            input {
+              font-size: 0.875rem;
+              line-height: 1.063rem;
+            }
+
+            p {
+              font-size: 0.875rem;
+              line-height: 1.063rem;
+            }
+
+            .row {
+              flex-direction: column;
+              gap: 1.25rem;
+
+              .input {
+                width: 100%;
+                padding: 0.31rem;
+                align-items: center;
+              }
+
+              .flag {
+                gap: 0.31rem !important;
+                padding: 0.31rem !important;
+              }
+              button {
+                width: 50%;
+                font-size: 0.875rem;
+                line-height: 1.063rem;
+              }
+            }
+          }
+        }
+
+        .form_actions {
+          button {
+            margin: 3.75rem 0 1.5rem;
+          }
+        }
+        .already_registered {
+          gap: 1.25rem;
+          .question {
+            font-size: 0.875rem;
+            line-height: 1.063rem;
+          }
+
+          .check_stat {
+            font-size: 0.875rem;
+            line-height: 1.063rem;
+          }
+        }
+      }
+    }
+    .status_banner {
+      order: 1;
+      margin-bottom: 4.37rem;
+
+      button {
+        bottom: 4.04rem;
+        left: 13rem;
+      }
+    }
+  }
+}
