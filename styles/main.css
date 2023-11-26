@@ -1084,6 +1084,7 @@ footer .footer-social-links {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  width: 70%;
 }
 .covid_symptoms .symptoms_list {
   display: flex;
