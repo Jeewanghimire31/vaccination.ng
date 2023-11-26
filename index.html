@@ -7,11 +7,12 @@
     <title>Vaccination.ng</title>
   </head>
   <body>
-    <!-- <header class="container">
+    <!-- * header section -->
+    <header class="container">
       <div class="logo">
-        <img src="./assets/img/header_hero/logo.svg" alt="" />
+        <img src="./assets/img/header_hero/logo.svg" alt="logo" />
       </div>
-      <nav>
+      <nav class="main_nav">
         <ul>
           <li><a href="#" class="active_link"> Home </a></li>
           <li><a href="#" class="inactive_link"> Services </a></li>
@@ -22,8 +23,16 @@
       <div class="header-actions">
         <button class="btn_secondary">Check Status</button>
       </div>
-    </header> -->
+
+      <div class="ham_burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    </header>
     <main>
+        <!-- * landing section -->
       <section class="landing_section container">
         <div class="info">
           <section class="title">
@@ -87,6 +96,43 @@
         </div>
       </section>
 
+      <!-- *information section -->
+      <section class="information_section container">
+        <div class="information_section_content_first">
+            <div class="info_icon">
+                <img src="./assets/img/icons/clock.svg" alt="clock">
+                <p> Schedule your Vaccination </p>
+            </div>
+        </div>
+        <div class="information_section_content_second">
+                <div class="info_icon">
+                    <img src="./assets/img/icons/map-pin.svg" alt="map-pin">
+                    <div class="info_desc">
+                        <p> Location </p>
+                        <p> Ikeja Lagos, Nigeria </p>
+                    </div>
+                </div>
+                <div class="info_icon">
+                    <img src="./assets/img/icons/calendar.svg" alt="calender">
+                    <div class="info_desc">
+                        <p> Date </p>
+                        <p> 29 February, 2022 </p>
+                    </div>
+                </div>
+                <div class="info_icon">
+                    <img src="./assets/img/icons/shield.svg" alt="shield">
+                    <div class="info_desc">
+                        <p> Vaccine Type </p>
+                        <p> Mordena </p>
+                    </div>
+                </div>
+    
+                <button class="btn_primary">Submit</button>
+            </div> 
+         
+      </section>
+
+      <!-- * company section -->
       <section class="companies">
         <div class="companies_logo_container container">
           <img src="./assets/img/company/Moderna_logo 1.svg" alt="company" />
@@ -99,6 +145,7 @@
         </div>
       </section>
 
+      <!-- * check status section -->
       <section class="check_covid_status container">
         <div class="title">
           <p>Check your COVID-19 result on our Database</p>
@@ -121,10 +168,78 @@
           </div>
         </div>
       </section>
+
+      <!--* registration section -->
+      <section class="registration_section">
+        <h3 class="registration_form_title_small_screen">Get your vaccine registration today</h3>
+        <div class="registration_form">
+          <h3 class="registration_form_title">Get your vaccine registration today</h3>
+          
+          <!--* input form and buttons -->
+          <div class="form">
+            <div class="form_controls">
+              <div class="form_control">
+                <label for="full_name">Patient’s Full Name</label>
+                <input type="text" name="full_name" placeholder="Full name" />
+              </div>
+              <div class="form_control">
+                <label for="mobile_number">Mobile Number</label>
+                <p>
+                  Notifications for appointment and reminders will be sent to
+                  this provided number
+                </p>
+
+                <!-- inside row there are two component as button and input -->
+                <div class="row">
+                    <!-- inside input flag and mobile input part -->
+                  <div class="input">
+                    <!-- flag and arrow -->
+                    <div class="flag">
+                      <div class="icon">
+                        <img
+                          src="./assets/img/icons/flag-nigeria.svg"
+                          alt="flag"
+                        />
+                      </div>
+                      <div class="arrow">
+                        <img
+                          src="./assets/img/icons/chevron-down.svg"
+                          alt="arrow"
+                        />
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      name="mobile_number"
+                      placeholder="Phone number"
+                    />
+                  </div>
+                  <button class="btn_primary">Verify</button>
+                </div>
+              </div>
+            </div>
+            <div class="form_actions">
+              <button type="button" class="btn_primary">Submit</button>
+            </div>
+            <div class="already_registered">
+              <p class="question">Already registered ?</p>
+              <p class="check_stat">Check your status</p>
+            </div>
+          </div>
+        </div>
+        <div class="status_banner">
+          <img
+            src="./assets/img/header_hero/covid_status_banner.png"
+            alt="covid status banner"
+          />
+          <button class="btn_outline">Verify Status</button>
+        </div>
+      </section>
     </main>
-    <!-- <footer class="container">
+    <!-- * footer section -->
+    <footer class="container">
       <div class="logo">
-        <img src="./assets/img/header_hero/logo.svg" alt="" />
+        <img src="./assets/img/header_hero/logo.svg" alt="footer_logo" />
       </div>
       <nav>
         <ul>
@@ -148,6 +263,6 @@
         <img src="./assets//img/icons/twitter.svg" alt="social-icon" class="" />
         <img src="./assets//img/icons/youtube.svg" alt="social-icon" class="" />
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

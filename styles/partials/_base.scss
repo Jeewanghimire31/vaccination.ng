@@ -2,22 +2,17 @@ body {
   background: url("../../assets//img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  
+  font-family: Montserrat;
 }
 
 main {
   width: 100vw;
 }
-.container {
-  max-width: 81.25rem;
-  margin-inline: auto;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 41.74rem;
-  }
-}
-@media screen and (max-width: 425px) {
-  .container {
-    max-width: 19.0575rem;
-  }
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  appearance: none;
 }
