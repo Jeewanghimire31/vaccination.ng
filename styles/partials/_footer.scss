@@ -1,11 +1,15 @@
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  gap: 10rem;
+  padding-block: 3rem;
   
 
   nav {
     ul {
+      
       display: flex;
       list-style: none;
       gap: 1.56rem;
@@ -24,5 +28,43 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 0.63rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: start;
+
+    nav{
+      ul{
+        gap: 1.56rem;
+      }
+    }
+
+    .footer-social-links{
+      gap: 0.39rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: start;
+    padding-bottom: 1.88rem;
+
+    nav{
+      ul{
+        flex-direction: column;
+        gap: 0.62rem;
+      }
+    }
+
+    .footer-social-links{
+      gap: 0.22rem;
+    }
   }
 }
