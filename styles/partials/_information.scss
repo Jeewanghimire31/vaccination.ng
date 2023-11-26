@@ -4,15 +4,7 @@
   flex-direction: column;
   gap: 0.62rem;
 
-  .info_icon {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    img {
-      padding: 0.63rem 0.62rem;
-      border-radius: 0.625rem;
-      background: rgba(196, 196, 196, 0.1);
-    }
+
 
     p {
       color: #fff;
@@ -32,7 +24,7 @@
         line-height: 1.813rem;
       }
     }
-  }
+  
 
   .information_section_content_second {
     display: flex;
@@ -59,7 +51,7 @@
       align-items: center;
       gap: 3.12rem;
       padding: 2.31rem 0.09rem 2.81rem 0.75rem;
-      .info_icon {
+      .icon_card {
         p {
           font-size: 1.25rem;
           line-height: 1.5rem;
@@ -89,12 +81,7 @@
   .information_section {
     gap: 1.56rem;
 
-    .info_icon {
-      img {  
-          padding: 0.31rem;
-          border-radius: 0.625rem;
-          background: rgba(196, 196, 196, 0.1);
-      }
+    .icon_card {
       p {
         font-size: 0.875rem;
         line-height: 1.063rem;
@@ -108,7 +95,7 @@
       padding: 1.25rem 4.73rem 0.63rem 0.63rem;
       gap: 1.5rem;
 
-      .info_icon {
+      .icon_card {
         gap: 0.87rem;
 
         p {

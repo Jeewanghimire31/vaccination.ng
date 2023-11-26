@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url("../../assets//img/background.svg");
+  background: url("../assets/img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Montserrat;
@@ -21,8 +21,8 @@ button {
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .container {
@@ -76,6 +76,24 @@ button {
   .inactive_link {
     font-size: 0.875rem;
     line-height: 1.063rem;
+  }
+}
+.icon_card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.icon_card img {
+  padding: 0.63rem 0.62rem;
+  border-radius: 0.625rem;
+  background: rgba(196, 196, 196, 0.1);
+}
+
+@media screen and (max-width: 425px) {
+  .icon_card img {
+    padding: 0.31rem;
+    border-radius: 0.625rem;
+    background: rgba(196, 196, 196, 0.1);
   }
 }
 .btn_secondary {
@@ -246,17 +264,7 @@ footer .footer-social-links {
   flex-direction: column;
   gap: 0.62rem;
 }
-.information_section .info_icon {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-.information_section .info_icon img {
-  padding: 0.63rem 0.62rem;
-  border-radius: 0.625rem;
-  background: rgba(196, 196, 196, 0.1);
-}
-.information_section .info_icon p {
+.information_section p {
   color: #fff;
   font-family: Montserrat;
   font-size: 1.5rem;
@@ -264,7 +272,7 @@ footer .footer-social-links {
   font-weight: 700;
   line-height: 1.813rem;
 }
-.information_section .info_icon .info_desc p:first-child {
+.information_section .info_desc p:first-child {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.5rem;
   font-style: normal;
@@ -293,11 +301,15 @@ footer .footer-social-links {
     gap: 3.12rem;
     padding: 2.31rem 0.09rem 2.81rem 0.75rem;
   }
-  .information_section .information_section_content_second .info_icon p {
+  .information_section .information_section_content_second .icon_card p {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
-  .information_section .information_section_content_second .info_icon .info_desc p:first-child {
+  .information_section
+    .information_section_content_second
+    .icon_card
+    .info_desc
+    p:first-child {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
@@ -315,12 +327,7 @@ footer .footer-social-links {
   .information_section {
     gap: 1.56rem;
   }
-  .information_section .info_icon img {
-    padding: 0.31rem;
-    border-radius: 0.625rem;
-    background: rgba(196, 196, 196, 0.1);
-  }
-  .information_section .info_icon p {
+  .information_section .icon_card p {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
@@ -331,14 +338,18 @@ footer .footer-social-links {
     padding: 1.25rem 4.73rem 0.63rem 0.63rem;
     gap: 1.5rem;
   }
-  .information_section .information_section_content_second .info_icon {
+  .information_section .information_section_content_second .icon_card {
     gap: 0.87rem;
   }
-  .information_section .information_section_content_second .info_icon p {
+  .information_section .information_section_content_second .icon_card p {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .information_section .information_section_content_second .info_icon .info_desc p:first-child {
+  .information_section
+    .information_section_content_second
+    .icon_card
+    .info_desc
+    p:first-child {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
@@ -385,6 +396,35 @@ footer .footer-social-links {
     opacity: 100%;
   }
 }
+.why_vaccination_section {
+  background-color: red;
+  height: 50vh;
+}
+.why_vaccination_section .why_vaccination_section_title {
+  display: flex;
+  gap: 15.97rem;
+}
+.why_vaccination_section .why_vaccination_section_title h3 {
+  color: #fff;
+  font-size: 2.99375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.625rem;
+  text-align: initial;
+  flex: 1;
+}
+.why_vaccination_section .why_vaccination_section_title p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.24738rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  flex: 1;
+}
+.why_vaccination_section .why_vaccination_section_info {
+  display: flex;
+}
+
 .landing_section {
   display: flex;
   align-items: start;
@@ -457,7 +497,7 @@ footer .footer-social-links {
   height: 100%;
   border-radius: 2.6995rem;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
 }
 .landing_section .banner .banner_cover .illustration_cover {
@@ -495,7 +535,8 @@ footer .footer-social-links {
   width: 23.375rem;
   border-radius: 1.25rem;
   background: rgba(196, 196, 196, 0.2);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   gap: 1.25rem;
   align-items: center;
@@ -526,7 +567,12 @@ footer .footer-social-links {
   font-weight: 700;
   line-height: normal;
 }
-.landing_section .banner .banner_cover .specialists .specialist_number .count_name {
+.landing_section
+  .banner
+  .banner_cover
+  .specialists
+  .specialist_number
+  .count_name {
   color: #17c2ec;
   font-family: Montserrat;
   font-size: 1.5rem;
@@ -658,7 +704,11 @@ footer .footer-social-links {
   border: 3px solid rgba(196, 196, 196, 0.15);
   background: transparent;
 }
-.check_covid_status .covid_status_body .check_status_form .form_controls input:focus {
+.check_covid_status
+  .covid_status_body
+  .check_status_form
+  .form_controls
+  input:focus {
   border: 3px solid #17c2ec;
 }
 .check_covid_status .covid_status_body .check_status_form .form_actions button {
@@ -710,7 +760,11 @@ footer .footer-social-links {
     flex-direction: column;
     width: 100%;
   }
-  .check_covid_status .covid_status_body .check_status_form .form_controls input {
+  .check_covid_status
+    .covid_status_body
+    .check_status_form
+    .form_controls
+    input {
     font-size: 1.25rem;
     font-weight: 500;
     width: 100%;
@@ -741,7 +795,11 @@ footer .footer-social-links {
     flex-direction: column;
     width: 100%;
   }
-  .check_covid_status .covid_status_body .check_status_form .form_controls input {
+  .check_covid_status
+    .covid_status_body
+    .check_status_form
+    .form_controls
+    input {
     font-size: 0.75rem;
     font-weight: 500;
     width: 100%;
@@ -795,7 +853,12 @@ footer .footer-social-links {
   flex-direction: column;
   gap: 1.25rem;
 }
-.registration_section .registration_form .form .form_controls .form_control label {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  label {
   color: #000;
   font-family: Montserrat;
   font-size: 1.5rem;
@@ -803,7 +866,12 @@ footer .footer-social-links {
   font-weight: 700;
   line-height: 1.813rem;
 }
-.registration_section .registration_form .form .form_controls .form_control input {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  input {
   width: 100%;
   height: 4.375rem;
   border-radius: 1.25rem;
@@ -826,18 +894,36 @@ footer .footer-social-links {
   font-weight: 500;
   line-height: 1.5rem;
 }
-.registration_section .registration_form .form .form_controls .form_control .row {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  .row {
   display: flex;
   gap: 2.25rem;
 }
-.registration_section .registration_form .form .form_controls .form_control .row .input {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  .row
+  .input {
   display: flex;
   border-radius: 1.25rem;
   background: rgba(11, 21, 60, 0.15);
   padding: 0.62rem;
   width: 70%;
 }
-.registration_section .registration_form .form .form_controls .form_control .row .input .flag {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  .row
+  .input
+  .flag {
   display: flex;
   height: 100%;
   align-items: center;
@@ -846,10 +932,23 @@ footer .footer-social-links {
   padding: 0.62rem;
   border-right: 4px solid rgba(0, 0, 0, 0.1);
 }
-.registration_section .registration_form .form .form_controls .form_control .row .input input {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  .row
+  .input
+  input {
   background: transparent;
 }
-.registration_section .registration_form .form .form_controls .form_control .row button {
+.registration_section
+  .registration_form
+  .form
+  .form_controls
+  .form_control
+  .row
+  button {
   display: flex;
   width: 25%;
   align-items: center;
@@ -927,11 +1026,21 @@ footer .footer-social-links {
   .registration_section .registration_form .form {
     width: 100%;
   }
-  .registration_section .registration_form .form .form_controls .form_control label {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    label {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
-  .registration_section .registration_form .form .form_controls .form_control input {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    input {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
@@ -957,32 +1066,70 @@ footer .footer-social-links {
   .registration_section .registration_form .form {
     gap: 0;
   }
-  .registration_section .registration_form .form .form_controls .form_control label {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    label {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section .registration_form .form .form_controls .form_control input {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    input {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section .registration_form .form .form_controls .form_control p {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    p {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section .registration_form .form .form_controls .form_control .row {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    .row {
     flex-direction: column;
     gap: 1.25rem;
   }
-  .registration_section .registration_form .form .form_controls .form_control .row .input {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    .row
+    .input {
     width: 100%;
     padding: 0.31rem;
     align-items: center;
   }
-  .registration_section .registration_form .form .form_controls .form_control .row .flag {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    .row
+    .flag {
     gap: 0.31rem !important;
     padding: 0.31rem !important;
   }
-  .registration_section .registration_form .form .form_controls .form_control .row button {
+  .registration_section
+    .registration_form
+    .form
+    .form_controls
+    .form_control
+    .row
+    button {
     width: 50%;
     font-size: 0.875rem;
     line-height: 1.063rem;
@@ -997,7 +1144,11 @@ footer .footer-social-links {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section .registration_form .form .already_registered .check_stat {
+  .registration_section
+    .registration_form
+    .form
+    .already_registered
+    .check_stat {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
@@ -1009,4 +1160,4 @@ footer .footer-social-links {
     bottom: 4.04rem;
     left: 13rem;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

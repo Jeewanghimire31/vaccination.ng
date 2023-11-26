@@ -54,3 +54,27 @@
     line-height: 1.063rem;
   }
 }
+
+
+// * icon card and design
+.icon_card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  img {
+    padding: 0.63rem 0.62rem;
+    border-radius: 0.625rem;
+    background: rgba(196, 196, 196, 0.1);
+  }
+  }
+
+  @media screen and (max-width: 425px){
+    .icon_card{
+
+    img {  
+      padding: 0.31rem;
+      border-radius: 0.625rem;
+      background: rgba(196, 196, 196, 0.1);
+  }
+  }
+  }
