@@ -1,0 +1,134 @@
+.information_section {
+  //   background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+
+  .info_icon {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    img {
+      padding: 0.63rem 0.62rem;
+      border-radius: 0.625rem;
+      background: rgba(196, 196, 196, 0.1);
+    }
+
+    p {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.813rem;
+    }
+
+    .info_desc {
+      p:first-child {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.813rem;
+      }
+    }
+  }
+
+  .information_section_content_second {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
+    gap: 3.12rem;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+    background: rgba(196, 196, 196, 0.05);
+    padding: 3.19rem 2rem 2.56rem;
+  }
+
+  button {
+    margin-left: 5.44rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .information_section {
+    gap: 2.81rem;
+
+    .information_section_content_second {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3.12rem;
+      padding: 2.31rem 0.09rem 2.81rem 0.75rem;
+      .info_icon {
+        p {
+          font-size: 1.25rem;
+          line-height: 1.5rem;
+        }
+
+        .info_desc {
+          p:first-child {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+    button {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      margin-left: 4.27rem;
+      margin-right: 2.25rem;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .information_section {
+    gap: 1.56rem;
+
+    .info_icon {
+      img {  
+          padding: 0.31rem;
+          border-radius: 0.625rem;
+          background: rgba(196, 196, 196, 0.1);
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+      }
+    }
+
+    .information_section_content_first {
+      padding-left: 0.63rem;
+    }
+    .information_section_content_second {
+      padding: 1.25rem 4.73rem 0.63rem 0.63rem;
+      gap: 1.5rem;
+
+      .info_icon {
+        gap: 0.87rem;
+
+        p {
+          font-size: 0.875rem;
+          line-height: 1.063rem;
+        }
+
+        .info_desc {
+          p:first-child {
+            font-size: 0.875rem;
+            line-height: 1.063rem;
+          }
+        }
+      }
+    }
+
+    button {
+      margin: 0;
+      font-size: 0.875rem;
+      line-height: 1.063rem;
+    }
+  }
+}
