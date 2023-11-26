@@ -389,12 +389,14 @@ footer .footer-social-links {
   }
 }
 .why_vaccination_section {
-  background-color: red;
-  height: 50vh;
+  padding-top: 3.62rem;
+  padding-bottom: 4.99rem;
+  margin-top: 3.94rem;
 }
 .why_vaccination_section .why_vaccination_section_title {
   display: flex;
   gap: 15.97rem;
+  padding-block-end: 2.49rem;
 }
 .why_vaccination_section .why_vaccination_section_title h3 {
   color: #fff;
@@ -415,8 +417,185 @@ footer .footer-social-links {
 }
 .why_vaccination_section .why_vaccination_section_info {
   display: flex;
+  gap: 4.62rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.why_vaccination_section .why_vaccination_section_info .title {
+  font-size: 1.49688rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.813rem;
+  padding-inline: 2.56rem;
+}
+.why_vaccination_section .why_vaccination_section_info .read_more a {
+  text-decoration: none;
+  color: #17c2ec;
+  font-size: 1.12269rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  padding-inline: 2.49rem;
+}
+.why_vaccination_section .why_vaccination_section_info .active_card {
+  border-radius: 3.1185rem 9.3555rem 3.1185rem 3.1185rem;
+  background: rgba(196, 196, 196, 0.2);
+  flex: 1.5;
+  padding-bottom: 4.86rem;
+}
+.why_vaccination_section .why_vaccination_section_info .active_card .icon_card {
+  padding: 2.49rem;
+  border-radius: 1.87113rem;
+}
+.why_vaccination_section .why_vaccination_section_info .active_card .icon_card img {
+  padding: 0.94rem;
+}
+.why_vaccination_section .why_vaccination_section_info .active_card .title {
+  color: #17c2ec;
+  padding-inline: 2.56rem;
+}
+.why_vaccination_section .why_vaccination_section_info .active_card p {
+  color: #fff;
+  font-size: 1.12269rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+  padding: 1.87rem 3.49rem 2.74rem 2.56rem;
+}
+.why_vaccination_section .why_vaccination_section_info .active_card .read_more a {
+  color: #17c2ec;
+}
+.why_vaccination_section .why_vaccination_section_info .inactive_card {
+  display: flex;
+  gap: 4.62rem;
+}
+.why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card {
+  flex: 1;
+  border-radius: 3.1185rem;
+  border: 2.994px solid rgba(255, 255, 255, 0.5);
+}
+.why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .icon_card {
+  border-radius: 1.30975rem;
+  padding: 2.49rem;
+}
+.why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .icon_card img {
+  padding: 0.62rem;
+}
+.why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .title {
+  color: #fff;
+  padding-inline: 2.49rem;
+  padding-block-end: 3.56rem;
+}
+.why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .read_more {
+  padding-block-end: 3.93rem;
 }
 
+@media screen and (max-width: 768px) {
+  .why_vaccination_section .why_vaccination_section_title {
+    flex-direction: column;
+    gap: 2.55rem;
+  }
+  .why_vaccination_section .why_vaccination_section_title h3 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .why_vaccination_section .why_vaccination_section_title p {
+    font-size: 1.24738rem;
+    line-height: 1.5rem;
+    margin-bottom: 3.14rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: baseline;
+  }
+  .why_vaccination_section .why_vaccination_section_info .active_card {
+    width: 70%;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card {
+    align-items: center;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card {
+    width: 50%;
+    height: -moz-fit-content;
+    height: fit-content;
+    height: 100%;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .title {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .read_more {
+    font-size: 1.12269rem;
+    line-height: 1.375rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .why_vaccination_section {
+    padding-top: 2.62rem;
+  }
+  .why_vaccination_section .why_vaccination_section_title {
+    gap: 1.06rem;
+  }
+  .why_vaccination_section .why_vaccination_section_title h3 {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+  }
+  .why_vaccination_section .why_vaccination_section_title p {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    padding-top: 2.5rem;
+    margin-bottom: 0;
+  }
+  .why_vaccination_section .why_vaccination_section_info {
+    gap: 1.87rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .read_more a {
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    padding: 0 10.13rem 2.1rem 1.25rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .active_card {
+    width: 100%;
+  }
+  .why_vaccination_section .why_vaccination_section_info .active_card .icon_card {
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .active_card .icon_card img {
+    padding: 0.62rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .active_card .title {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    padding: 0 5.25rem 1.25rem 1.25rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .active_card p {
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    padding: 0 1.31rem 1.68rem 1.25rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card {
+    flex-direction: column;
+    gap: 1.87rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card {
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .icon_card {
+    border-radius: 0.625rem;
+    padding: 1.24rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .title {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+    padding-block-end: 1.28rem;
+  }
+  .why_vaccination_section .why_vaccination_section_info .inactive_card .inactive_card_card .read_more {
+    padding-block-end: 1.47rem;
+  }
+}
 .landing_section {
   display: flex;
   align-items: start;
@@ -601,6 +780,7 @@ footer .footer-social-links {
   .landing_section {
     align-items: center;
     gap: 3.44rem;
+    padding-top: 1rem;
   }
   .landing_section .info {
     width: 100%;
