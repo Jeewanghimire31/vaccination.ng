@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url("../assets/img/background.svg");
+  background: url("../../assets//img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Montserrat;
@@ -21,8 +21,8 @@ button {
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .container {
@@ -305,11 +305,7 @@ footer .footer-social-links {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
-  .information_section
-    .information_section_content_second
-    .icon_card
-    .info_desc
-    p:first-child {
+  .information_section .information_section_content_second .icon_card .info_desc p:first-child {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
@@ -345,11 +341,7 @@ footer .footer-social-links {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .information_section
-    .information_section_content_second
-    .icon_card
-    .info_desc
-    p:first-child {
+  .information_section .information_section_content_second .icon_card .info_desc p:first-child {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
@@ -497,7 +489,7 @@ footer .footer-social-links {
   height: 100%;
   border-radius: 2.6995rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
 .landing_section .banner .banner_cover .illustration_cover {
@@ -535,8 +527,7 @@ footer .footer-social-links {
   width: 23.375rem;
   border-radius: 1.25rem;
   background: rgba(196, 196, 196, 0.2);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   gap: 1.25rem;
   align-items: center;
@@ -567,12 +558,7 @@ footer .footer-social-links {
   font-weight: 700;
   line-height: normal;
 }
-.landing_section
-  .banner
-  .banner_cover
-  .specialists
-  .specialist_number
-  .count_name {
+.landing_section .banner .banner_cover .specialists .specialist_number .count_name {
   color: #17c2ec;
   font-family: Montserrat;
   font-size: 1.5rem;
@@ -704,11 +690,7 @@ footer .footer-social-links {
   border: 3px solid rgba(196, 196, 196, 0.15);
   background: transparent;
 }
-.check_covid_status
-  .covid_status_body
-  .check_status_form
-  .form_controls
-  input:focus {
+.check_covid_status .covid_status_body .check_status_form .form_controls input:focus {
   border: 3px solid #17c2ec;
 }
 .check_covid_status .covid_status_body .check_status_form .form_actions button {
@@ -760,11 +742,7 @@ footer .footer-social-links {
     flex-direction: column;
     width: 100%;
   }
-  .check_covid_status
-    .covid_status_body
-    .check_status_form
-    .form_controls
-    input {
+  .check_covid_status .covid_status_body .check_status_form .form_controls input {
     font-size: 1.25rem;
     font-weight: 500;
     width: 100%;
@@ -795,11 +773,7 @@ footer .footer-social-links {
     flex-direction: column;
     width: 100%;
   }
-  .check_covid_status
-    .covid_status_body
-    .check_status_form
-    .form_controls
-    input {
+  .check_covid_status .covid_status_body .check_status_form .form_controls input {
     font-size: 0.75rem;
     font-weight: 500;
     width: 100%;
@@ -853,12 +827,7 @@ footer .footer-social-links {
   flex-direction: column;
   gap: 1.25rem;
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  label {
+.registration_section .registration_form .form .form_controls .form_control label {
   color: #000;
   font-family: Montserrat;
   font-size: 1.5rem;
@@ -866,12 +835,7 @@ footer .footer-social-links {
   font-weight: 700;
   line-height: 1.813rem;
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  input {
+.registration_section .registration_form .form .form_controls .form_control input {
   width: 100%;
   height: 4.375rem;
   border-radius: 1.25rem;
@@ -894,36 +858,18 @@ footer .footer-social-links {
   font-weight: 500;
   line-height: 1.5rem;
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  .row {
+.registration_section .registration_form .form .form_controls .form_control .row {
   display: flex;
   gap: 2.25rem;
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  .row
-  .input {
+.registration_section .registration_form .form .form_controls .form_control .row .input {
   display: flex;
   border-radius: 1.25rem;
   background: rgba(11, 21, 60, 0.15);
   padding: 0.62rem;
   width: 70%;
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  .row
-  .input
-  .flag {
+.registration_section .registration_form .form .form_controls .form_control .row .input .flag {
   display: flex;
   height: 100%;
   align-items: center;
@@ -932,23 +878,10 @@ footer .footer-social-links {
   padding: 0.62rem;
   border-right: 4px solid rgba(0, 0, 0, 0.1);
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  .row
-  .input
-  input {
+.registration_section .registration_form .form .form_controls .form_control .row .input input {
   background: transparent;
 }
-.registration_section
-  .registration_form
-  .form
-  .form_controls
-  .form_control
-  .row
-  button {
+.registration_section .registration_form .form .form_controls .form_control .row button {
   display: flex;
   width: 25%;
   align-items: center;
@@ -1026,21 +959,11 @@ footer .footer-social-links {
   .registration_section .registration_form .form {
     width: 100%;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    label {
+  .registration_section .registration_form .form .form_controls .form_control label {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    input {
+  .registration_section .registration_form .form .form_controls .form_control input {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
@@ -1066,70 +989,32 @@ footer .footer-social-links {
   .registration_section .registration_form .form {
     gap: 0;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    label {
+  .registration_section .registration_form .form .form_controls .form_control label {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    input {
+  .registration_section .registration_form .form .form_controls .form_control input {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    p {
+  .registration_section .registration_form .form .form_controls .form_control p {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    .row {
+  .registration_section .registration_form .form .form_controls .form_control .row {
     flex-direction: column;
     gap: 1.25rem;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    .row
-    .input {
+  .registration_section .registration_form .form .form_controls .form_control .row .input {
     width: 100%;
     padding: 0.31rem;
     align-items: center;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    .row
-    .flag {
+  .registration_section .registration_form .form .form_controls .form_control .row .flag {
     gap: 0.31rem !important;
     padding: 0.31rem !important;
   }
-  .registration_section
-    .registration_form
-    .form
-    .form_controls
-    .form_control
-    .row
-    button {
+  .registration_section .registration_form .form .form_controls .form_control .row button {
     width: 50%;
     font-size: 0.875rem;
     line-height: 1.063rem;
@@ -1144,11 +1029,7 @@ footer .footer-social-links {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
-  .registration_section
-    .registration_form
-    .form
-    .already_registered
-    .check_stat {
+  .registration_section .registration_form .form .already_registered .check_stat {
     font-size: 0.875rem;
     line-height: 1.063rem;
   }
@@ -1160,4 +1041,175 @@ footer .footer-social-links {
     bottom: 4.04rem;
     left: 13rem;
   }
-} /*# sourceMappingURL=main.css.map */
+}
+.covid_symptoms {
+  display: flex;
+  flex-direction: column;
+  gap: 11.19rem;
+  justify-content: space-between;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 4.19rem;
+}
+.covid_symptoms .title {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.covid_symptoms .title h5 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.covid_symptoms .title h2 {
+  color: #17c2ec;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.covid_symptoms .title p {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 70%;
+}
+.covid_symptoms .symptoms_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.covid_symptoms .symptoms_list .modal {
+  max-width: 100%;
+  max-height: 33.1rem;
+}
+.covid_symptoms .symptoms_list .modal img {
+  width: 100%;
+}
+.covid_symptoms .symptoms_list .symptoms_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms {
+  display: flex;
+  justify-content: space-between;
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom {
+  display: flex;
+  align-items: center;
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .covid_icon {
+  transform: translateX(1.7rem);
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .symptom_name {
+  color: #17c2ec;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-block: 1.44rem;
+  border-radius: 0.625rem;
+  background: rgba(196, 196, 196, 0.2);
+  padding-inline: 2.06rem;
+  max-width: 22.6rem;
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms:nth-child(1) {
+  width: 70%;
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms:nth-child(2) {
+  width: 80%;
+}
+.covid_symptoms .symptoms_list .symptoms_container .symotoms:nth-child(3) {
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .covid_symptoms {
+    gap: 3.17rem;
+  }
+  .covid_symptoms .title h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .covid_symptoms .title h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+  }
+  .covid_symptoms .title p {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .covid_icon {
+    width: 4.0625rem;
+    height: 4.0625rem;
+    flex-shrink: 0;
+  }
+  .covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .covid_icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .symptom_name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding-right: 1rem;
+    padding-left: 2.06rem;
+    padding-block: 0.75rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .covid_symptoms {
+    gap: 1.88rem;
+    justify-content: center;
+  }
+  .covid_symptoms .title h5 {
+    font-size: 0.54706rem;
+    font-weight: 600;
+  }
+  .covid_symptoms .title h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .covid_symptoms .title p {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .covid_icon {
+    width: 1.9755rem;
+    height: 1.9755rem;
+    flex-shrink: 0;
+  }
+  .covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .covid_icon img {
+    width: 100%;
+    height: 100%;
+  }
+  .covid_symptoms .symptoms_list .symptoms_container .symotoms .symptom .symptom_name {
+    font-size: 0.54706rem;
+    font-weight: 600;
+    padding-right: 0.43rem;
+    padding-left: 1.09rem;
+    padding-block: 0.33rem;
+  }
+}/*# sourceMappingURL=main.css.map */
