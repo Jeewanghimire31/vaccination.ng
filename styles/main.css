@@ -40,6 +40,11 @@ button {
     max-width: 19.0575rem;
   }
 }
+@media screen and (max-width: 425px) and (max-width: 375px) {
+  .container {
+    max-width: 14.6825rem;
+  }
+}
 .active_link {
   color: #fff;
   font-family: Montserrat;
@@ -213,6 +218,8 @@ footer {
   width: 100%;
   gap: 10rem;
   padding-block: 3rem;
+  margin-top: 13rem;
+  margin-bottom: 4.19rem;
 }
 footer nav ul {
   display: flex;
@@ -419,7 +426,7 @@ footer .footer-social-links {
   display: flex;
   gap: 4.62rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 .why_vaccination_section .why_vaccination_section_info .title {
   font-size: 1.49688rem;
@@ -1393,6 +1400,138 @@ footer .footer-social-links {
     padding-block: 0.33rem;
   }
 }
+.quote_section {
+  background: url("../../assets/img/backgroung_quote.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -152px;
+}
+.quote_section .card {
+  width: 64.4375rem;
+  height: 25rem;
+  border-radius: 3.125rem;
+  background: #17c2ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-inline: 15.06rem;
+  padding-block: 4.38rem 6.69rem;
+  gap: 1.25rem;
+  transform: translateY(150px);
+}
+.quote_section .card .child_title {
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.688rem;
+}
+.quote_section .card .child_desc {
+  padding-block-end: 1.25rem;
+  padding-inline: 1.31rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.813rem;
+}
+.quote_section .card .child_email_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  border-radius: 1.875rem;
+  background: #fff;
+  height: 4.6875rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.quote_section .card .child_email_input input {
+  width: 100%;
+  border-radius: 1.25rem;
+  outline: none;
+  padding-inline: 2.5rem 12rem;
+  padding-block: 1.78rem;
+  border: none;
+  color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  background: transparent;
+}
+.quote_section .card .child_email_input .child_input_icon {
+  border-radius: 0rem 1.875rem 1.875rem 0rem;
+  background: #0b153c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  height: 4.6875rem;
+  border-left: 4px solid rgba(197, 37, 37, 0.1);
+}
+.quote_section .card .child_email_input .child_input_icon img {
+  padding-inline: 1.88rem;
+  padding-block: 1.12rem;
+}
+
+@media screen and (max-width: 768px) {
+  .quote_section .card {
+    width: 41.1875rem;
+    height: 16.4375rem;
+    padding: 0;
+  }
+  .quote_section .card .child_title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .quote_section .card .child_desc {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .quote_section .card .child_email_input {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .quote_section .card {
+    width: 17.5rem;
+    height: 9.1875rem;
+    border-radius: 0.625rem;
+    padding: 1rem 1.5rem 1.75rem 1.44rem;
+    transform: translateY(100px);
+    gap: 0;
+  }
+  .quote_section .card .child_title {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .quote_section .card .child_desc {
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+  }
+  .quote_section .card .child_email_input {
+    width: 90%;
+    height: 2.5rem;
+  }
+  .quote_section .card .child_email_input input {
+    padding-inline: 2.5rem 1.67rem;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+  }
+  .quote_section .card .child_email_input .child_input_icon {
+    height: 2.5rem;
+    width: 4.25rem;
+  }
+  .quote_section .card .child_email_input .child_input_icon img {
+    padding-block: 0.62rem;
+    padding-inline: 0.73rem;
+    max-width: 100%;
+  }
+}
 .feedback_section {
   background: url(../../assets/img/feedback/unsplash_Y4MKctPwIrw.svg), lightgray -79.541px -30.065px/118.738% 105.665% no-repeat;
 }
@@ -1573,5 +1712,10 @@ footer .footer-social-links {
   .feedback_desc .feedback_card .patient_feedback {
     font-size: 0.76219rem;
     line-height: 0.938rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .feedback_card {
+    width: 22rem;
   }
 }/*# sourceMappingURL=main.css.map */

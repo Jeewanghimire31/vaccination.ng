@@ -12,6 +12,11 @@
   .container {
     max-width: 19.0575rem;
   }
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 14.6825rem;
+  }
+}
 }
 
 // active links

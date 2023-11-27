@@ -1,48 +1,156 @@
-$box-width: 41.1875rem;
-$box-height: 16.4375rem;
-$border-radius: 3.125rem;
-
-.box {
-  width: $box-width;
-  height: $box-height;
-  background: #17C2EC;
-  border-radius: $border-radius;
+.quote_section {
+  background: url("../../assets/img/backgroung_quote.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  align-items: center;
+  margin-top: -152px;
 
-  .child {
-    margin: 1rem;
+  .card {
+    width: 64.4375rem;
+    height: 25rem;
+    border-radius: 3.125rem;
+    background: #17c2ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    padding-inline: 15.06rem;
+    padding-block: 4.38rem 6.69rem;
+    gap: 1.25rem;
+    transform: translateY(150px);
 
-    &:first-child {
+    .child_title {
+      text-align: center;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.688rem;
+    }
+
+    .child_desc {
+      padding-block-end: 1.25rem;
+      padding-inline: 1.31rem;
+      text-align: center;
       font-size: 1.5rem;
-      font-weight: bold;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.813rem;
     }
 
-    &:nth-child(2) {
-      font-size: 1rem;
-    }
-
-    &:last-child {
+    .child_email_input {
       display: flex;
-      align-items: center;
       justify-content: center;
-      margin-top: 1rem;
+      align-items: center;
+      gap: 0;
+      width: 100%;
+
+      border-radius: 1.875rem;
+      background: #fff;
+      height: 4.6875rem;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 
       input {
-        padding: 0.5rem;
+        width: 100%;
+        border-radius: 1.25rem;
+        outline: none;
+        padding-inline: 2.5rem 12rem;
+        padding-block: 1.78rem;
         border: none;
-        border-radius: 0.5rem;
-        margin-right: 0.5rem;
-        width: 70%;
+        color: rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5rem;
+        background: transparent;
       }
 
-      i {
-        font-size: 1.5rem;
-        cursor: pointer;
+      .child_input_icon {
+        border-radius: 0rem 1.875rem 1.875rem 0rem;
+        background: #0b153c;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+        height: 4.6875rem;
+        border-left: 4px solid rgba(197, 37, 37, 0.1);
+
+        img {
+          padding-inline: 1.88rem;
+          padding-block: 1.12rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quote_section {
+    .card {
+      width: 41.1875rem;
+      height: 16.4375rem;
+      padding: 0;
+
+      .child_title {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+      }
+
+      .child_desc {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+      }
+
+      .child_email_input{
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .quote_section {
+    // *{
+    //     border: 1px solid red;
+    // }
+    .card {
+        width: 17.5rem;
+        height: 9.1875rem;
+        border-radius: 0.625rem;
+        padding: 1rem 1.5rem 1.75rem 1.44rem;
+        transform: translateY(100px);
+        gap: 0;
+
+      .child_title {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+      }
+
+      .child_desc {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+      }
+
+      .child_email_input{
+        width: 90%;
+        height: 2.5rem;
+
+        input{
+            padding-inline: 2.5rem 1.67rem;
+            font-size: 0.625rem;
+            line-height: 0.75rem;
+            
+        }
+
+        .child_input_icon{
+            height: 2.5rem;
+            width: 4.25rem;
+            img{
+                padding-block: 0.62rem;
+                padding-inline: 0.73rem;
+                max-width: 100%;
+                
+            }
+        }
       }
     }
   }

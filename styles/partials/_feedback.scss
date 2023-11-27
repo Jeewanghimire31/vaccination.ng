@@ -182,6 +182,8 @@
   }
 }
 
+// * mobile 425px
+
 @media screen and (max-width: 425px) {
   .feedback_section {
     .feedback_title {
@@ -232,4 +234,11 @@
       }
     }
   }
+}
+
+// * mobile 375px
+@media screen and (max-width:375px){
+    .feedback_card{
+        width: 22rem;
+    }
 }
