@@ -1,0 +1,49 @@
+$box-width: 41.1875rem;
+$box-height: 16.4375rem;
+$border-radius: 3.125rem;
+
+.box {
+  width: $box-width;
+  height: $box-height;
+  background: #17C2EC;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  .child {
+    margin: 1rem;
+    color: #fff;
+
+    &:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &:nth-child(2) {
+      font-size: 1rem;
+    }
+
+    &:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+
+      input {
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        margin-right: 0.5rem;
+        width: 70%;
+      }
+
+      i {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
