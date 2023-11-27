@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url("../assets//img/background.svg");
+  background: url("../../assets//img/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Montserrat;
@@ -1391,5 +1391,187 @@ footer .footer-social-links {
     padding-right: 0.43rem;
     padding-left: 1.09rem;
     padding-block: 0.33rem;
+  }
+}
+.feedback_section {
+  background: url(../../assets/img/feedback/unsplash_Y4MKctPwIrw.svg), lightgray -79.541px -30.065px/118.738% 105.665% no-repeat;
+}
+.feedback_section .feedback_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  align-items: center;
+  padding-top: 3.56rem;
+  padding-bottom: 6.25rem;
+}
+.feedback_section .feedback_title .title {
+  color: #17c2ec;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.813rem;
+}
+.feedback_section .feedback_title .patent_title {
+  color: #000;
+  text-align: center;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.688rem;
+}
+.feedback_section .feedback_title .desc {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.813rem;
+  padding-inline: 10.56rem;
+  padding-block-start: 1.25rem;
+}
+.feedback_section .feedback_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 6.62rem;
+  gap: 2.81rem;
+}
+.feedback_section .feedback_desc .feedback_desc_container {
+  position: relative;
+}
+.feedback_section .feedback_desc .feedback_desc_container .covid_vaccine img {
+  position: absolute;
+  left: 15%;
+  bottom: -33%;
+}
+.feedback_section .feedback_desc .feedback_desc_container .feedback_card {
+  border-radius: 1.25rem;
+  background: rgba(196, 196, 196, 0.5);
+  padding: 1.88rem 2.06rem 2.75rem 1.88rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.feedback_section .feedback_desc .feedback_desc_container .feedback_card .patient_info {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.feedback_section .feedback_desc .feedback_desc_container .feedback_card .patient_info .patient_name h5 {
+  color: #000;
+  text-align: initial;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.813rem;
+}
+.feedback_section .feedback_desc .feedback_desc_container .feedback_card .patient_info .patient_name p {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: initial;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.063rem;
+}
+.feedback_section .feedback_desc .feedback_desc_container .feedback_card .patient_feedback {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+.feedback_section .feedback_desc .feedback_desc_container .feedback_card .patient_feedback span {
+  color: #17c2ec;
+}
+.feedback_section .feedback_desc .feedback_desc_container .center_card {
+  padding-inline-end: 1rem;
+  background: #17c2ec;
+}
+.feedback_section .feedback_desc .feedback_desc_container .center_card .patient_feedback {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 768px) {
+  .feedback_section .feedback_title {
+    padding-top: 2.87rem;
+    padding-bottom: 1.69rem;
+  }
+  .feedback_section .feedback_title .title {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .feedback_section .feedback_title .patent_title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  .feedback_section .feedback_title .desc {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    padding-inline: 2.12rem;
+    margin-bottom: 1.69rem;
+  }
+  .feedback_section .feedback_desc {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback_section .feedback_desc .feedback_desc_container .covid_vaccine img {
+    width: 10.86625rem;
+    height: 17.6875rem;
+    left: 29%;
+    bottom: -1%;
+  }
+  .feedback_section .feedback_desc .feedback_desc_container .feedback_card {
+    width: 25rem;
+    height: 15.625rem;
+  }
+  .feedback_section .feedback_desc .feedback_desc_container .patient_info .patient_name h5 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .feedback_section .feedback_desc .feedback_desc_container .patient_feedback .center_card {
+    z-index: 30;
+  }
+}
+@media screen and (max-width: 425px) {
+  .feedback_section .feedback_title {
+    gap: 0.63rem;
+    padding-block: 1.88rem 0rem;
+  }
+  .feedback_section .feedback_title .title {
+    font-size: 0.875rem;
+    line-height: 1.063rem;
+  }
+  .feedback_section .feedback_title .patent_title {
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+  }
+  .feedback_section .feedback_title .desc {
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    padding-inline: 1.75rem;
+    padding-block: 0.63rem;
+  }
+  .feedback_desc {
+    gap: 0.61rem;
+  }
+  .feedback_desc .feedback_card {
+    width: 19.0625rem;
+    height: 11.91406rem;
+  }
+  .feedback_desc .feedback_card .patient_info .patient_name h5 {
+    font-size: 0.84688rem;
+    line-height: 1.063rem;
+  }
+  .feedback_desc .feedback_card .patient_info .patient_name p {
+    font-size: 0.59281rem;
+    line-height: 0.75rem;
+  }
+  .feedback_desc .feedback_card .patient_feedback {
+    font-size: 0.76219rem;
+    line-height: 0.938rem;
   }
 }/*# sourceMappingURL=main.css.map */
